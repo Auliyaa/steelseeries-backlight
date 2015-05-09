@@ -1,7 +1,5 @@
 #include "msi_keyboard.h"
 
-#include <iostream>
-
 bool msi::setColor(hid_device *dev, msi::color c, msi::region r, msi::level l)
 {
   if (r == msi::all)

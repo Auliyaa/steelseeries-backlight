@@ -109,7 +109,10 @@ STR_ENUM(mode,
          "demo",
          "wave");
 
+// Send a HID command to set a color over the specified region with a given intensity
 extern bool setColor(hid_device* dev, msi::color c, msi::region r, msi::level l);
+
+// Send a HID command to set the built-in color mode.
 extern bool setMode(hid_device* dev, msi::mode m);
 
 } // namespace msi

@@ -3,6 +3,7 @@
 #include <tclap/CmdLine.h>
 #include "msi_keyboard.h"
 
+// Maps one of the enums at msi_keyboard.h to a TCLAP command-line parameter.
 #define MAP_CONSTANT(NAME,SHORT,DESC,MANDATORY)\
 std::vector<std::string> NAME##Values = msi::NAME::values();\
 TCLAP::ValuesConstraint<std::string> NAME##Constraint(NAME##Values);\
