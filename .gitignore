@@ -26,3 +26,11 @@
 *.exe
 *.out
 *.app
+
+# QtCreator files
+*.includes
+*.config
+*.creator
+*.files
+*.creator.user
+*.project
