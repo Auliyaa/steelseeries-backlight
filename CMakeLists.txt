@@ -47,11 +47,6 @@ find_library(HIDAPI_LIBRARY hidapi-libusb)
 #----------------------------------------------------------------------------
 # Overriding functions & setting up global macros
 #----------------------------------------------------------------------------
-if(ENABLE_CHECK_TARGET)
-  # The check_ target is defined into its own CMake script.
-  include(check_target.cmake)
-endif(ENABLE_CHECK_TARGET)
-
 # add_library
 function(ADD_LIBRARY name)
   _add_library(${name} ${ARGN})
