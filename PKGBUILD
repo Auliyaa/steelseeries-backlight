@@ -2,7 +2,7 @@
 
 _name=steelseeries-backlight
 pkgname=kbd-light
-pkgver=0.1
+pkgver=v0.1.r0.g6d1949c
 pkgrel=1
 pkgdesc="A very thin command-line utility to switch the light configuration of your MSI keyboard."
 arch=('i686' 'x86_64')
@@ -16,6 +16,7 @@ md5sums=('SKIP')
 
 pkgver() {
   cd "${srcdir}/${_name}"
+  git checkout v${pkgver}
   git describe --long | sed -r 's/([^-]*-g)/r\1/;s/-/./g'
 }
 
