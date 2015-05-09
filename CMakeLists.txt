@@ -93,3 +93,9 @@ add_executable(kbd-light
 target_link_libraries(kbd-light
   ${HIDAPI_LIBRARY}
 )
+
+install(TARGETS kbd-light
+  RUNTIME DESTINATION ${BINARY_INSTALL_DIR}
+  LIBRARY DESTINATION ${LIBRARY_INSTALL_DIR}
+  ARCHIVE DESTINATION ${LIBRARY_INSTALL_DIR}
+)
